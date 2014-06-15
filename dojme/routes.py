@@ -72,3 +72,11 @@ def route_form():
                 return render_template("submit.html",
                                        down="It's Down",
                                        url=web_address)
+
+
+@app.errorhandler(404)
+def handle_error():
+    """
+    404 error handler function
+    """
+    return render_template("404.html"), 404
