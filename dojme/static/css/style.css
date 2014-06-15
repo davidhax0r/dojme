@@ -1,0 +1,40 @@
+body {
+    font-family: monaco;
+}
+.header {
+    text-align: center;
+    font-size: 30px;
+}
+.content {
+    padding-top: 90px;
+    text-align: center;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    padding-left: 5px;
+}
+#link {
+    text-decoration: none;
+    color: black;
+}
+input[type=text]{
+    font-family: monaco;
+}
+#submit {
+    border-radius: 5px;
+}
+input {
+    width: 400px;
+}
+fieldset {
+    font-size: 20px;
+    font-weight: bold;
+}
+#msg {
+  font-size: 25px;
+  font-weight: bold;
+}
+#main-link {
+  text-decoration: none;
+}

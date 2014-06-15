@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block header %}
+<h1><a href="/" id="link">dojme, Down Or Just Me?</a></h1>
+{% endblock %}
+
+{% block content %}
+<div class="form">
+<form  class="pure-form" action="/form" method="post">
+<fieldset>
+Is <input type="text" name="webaddress" placeholder="facebook.com"> down or am I the unlucky one?</br>
+<div class="btn"> </br>
+<button type="submit" class="pure-button pure-button-primary" id="submit">Let's Go</button>
+</div>
+</fieldset>
+</form>
+</div>
+{% endblock %}

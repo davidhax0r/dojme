@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block header %}
+<h1><a href="/" id="link">dojme, Down Or Just Me?</a></h1>
+{% endblock %}
+
+{% block content %}
+{% if up %}
+<p id="msg">Oops, <a id="main-link" href="{{ url }}">{{ url }}</a> is only down for you</p>
+<img src="{{ url_for('static', filename='images/thumbsdown.png') }}" width="200px" height="auto">
+{% endif %}
+
+{% if down %}
+<p id="msg">Ahh, don't worry <a id="main-link" href="{{ url }}">{{ url }}</a> is down for everyone</p>
+<img src="{{ url_for('static', filename='images/thumbsup.png') }}" width="200px" height="auto">
+{% endif %}
+{% endblock %}
